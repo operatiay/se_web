@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Framework Tests" verbose="3" parallel="tests">
+	<parameter name="screenshotStoreFolder" value="screenshots" />
+<!-- 	<parameter name="gridServer" value="se-hub01" /> --> 
+	<test name="SafariTest">
+		<parameter name="os" value="MAC" />
+		<parameter name="platform" value="safari" />
+		<parameter name="testTarget" value="http://www.google.co.uk/" />
+		<classes>
+			<class name="com.ab.se.test.SafariTest" />
+		</classes>
+	</test>
+</suite>
